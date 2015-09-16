@@ -94,7 +94,8 @@ final class PhotosViewController : UICollectionViewController, UIPopoverPresenta
         // TODO: Settings
         collectionView?.backgroundColor = UIColor.whiteColor()
         photoCellFactory.registerCellIdentifiersForCollectionView(collectionView)
-        
+        photoCellFactory.settings = self.settings
+
         // Set an empty title to get < back button
         title = " "
         
